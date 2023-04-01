@@ -16,6 +16,8 @@ class RHGetEventsByEmail(RH):
             raise Forbidden
         email = request.view_args['email']
         user = get_user_by_email(email)
+        if user is None:
+            raise Forbidden
         managed_events = get_events_managed_by(user)
         linked_events = get_events_with_linked_event_persons(user)
         return jsonify(user_id=user.id, managed_events=list(managed_events), linked_events=list(linked_events))
