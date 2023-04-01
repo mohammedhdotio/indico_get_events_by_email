@@ -12,6 +12,12 @@ cd ~/tmp
 git clone https://github.com/mohammedhdotio/indico_get_events_by_email.git
 cd indico_get_events_by_email
 pip install . 
+exit
+```
+
+### Restart indico
+```bash
+systemctl restart indico-celery.service indico-uwsgi.service
 ```
 
 ### Config
