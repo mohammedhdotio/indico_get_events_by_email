@@ -8,10 +8,9 @@ This is my first python code so please excuse my ignorance if any and please don
 ```bash
 su - indico
 source ~/.venv/bin/activate
-cd /usr/local/src
-# download latest version of this repository
-# untar the archive
-# cd into repository folder
+cd ~/tmp
+git clone https://github.com/mohammedhdotio/indico_get_events_by_email.git
+cd indico_get_events_by_email
 pip install . 
 ```
 
