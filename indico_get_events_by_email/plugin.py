@@ -5,9 +5,10 @@ from indico_get_events_by_email.blueprint import blueprint
 from indico_get_events_by_email import _
 from wtforms.validators import DataRequired
 
+
 class SettingsForm(IndicoForm):
     token = StringField(_('Token'), [DataRequired()],
-                          description=_('The API token to access the <tt>this plugin</tt> service'))
+                        description=_('The API token to access the <tt>this plugin</tt> service'))
 
 
 class GetEventsByEmailPlugin(IndicoPlugin):
