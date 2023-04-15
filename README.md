@@ -27,6 +27,9 @@ systemctl restart indico-celery.service indico-uwsgi.service
 ### Usage
 ```bash
 curl -H "Authorization: TOKEN-HERE" https://events.yourdomain.com/get_events_by_email/email@yourdomain.com
+
+#V2
+curl -H "Authorization: TOKEN-HERE" https://events.yourdomain.com/get_events_by_email_v2/email@yourdomain.com
 ```
 - Don't forget to replace your token as well as the email of user you inquire on.
 
